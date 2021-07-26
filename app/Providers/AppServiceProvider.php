@@ -23,6 +23,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-    }
-}
+        <?php 
+
+        use Illuminate\Routing\UrlGenerator;
+
+        public function boot(UrlGenerator $url)
+        {
+            if (env('REDIRECT_HTTPS')) {
+            $url->formatScheme('https://');
+            }
+        }
+            }
+        }
