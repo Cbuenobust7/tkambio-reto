@@ -11,8 +11,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
+ 
         <?php
 
         public function register()
